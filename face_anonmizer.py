@@ -5,7 +5,7 @@ import mediapipe as mp
 mp_face_detection = mp.solutions.face_detection
 face_detection = mp_face_detection.FaceDetection(model_selection=0, min_detection_confidence=0.5)
 
-
+# If you're using a different webcam, change the number 0 to the corresponding index of your camera. I used 0 because I'm using the laptop's built-in camera.
 # Read webcam
 webcam = cv2.VideoCapture(0)
 
